@@ -79,5 +79,16 @@ elif apvsa == "triangle":
         print("Oh sad.")
     else:
         print("Try again.")
+elif apvsa == "cylinder":
+    cylinderv = input("Volume? (y/n) ")
+    if cylinderv == "y":
+        cylinder_radius = int(input("Enter in a radius: "))
+        cylinder_height = int(input("Enter in a height: "))
+        sphere_volume = math.pi * (cylinder_radius ** 2 * cylinder_height)
+        print("The volume of the cylinder is", sphere_volume)
+    elif cylinderv == "n":
+        print("Oh sad.")
+    else:
+        print("Try again.")
 else:
     print("Either not a shape or hasn't been added yet.")
